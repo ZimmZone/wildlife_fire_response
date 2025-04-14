@@ -1,3 +1,7 @@
+*.pdf
+data/
+merged_output.*
+*hgt.zip
 .ipynb_checkpoints
 .DS_Store
 tmp.py
