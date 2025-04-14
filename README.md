@@ -1,4 +1,6 @@
-# Assignment bootcamp-03-raster-data
+# Wildlife Response Post-Fire
+
+[![DOI](https://zenodo.org/badge/965872045.svg)](https://doi.org/10.5281/zenodo.15208532)
 
 To complete this assignment:
 
