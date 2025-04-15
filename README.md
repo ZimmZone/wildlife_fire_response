@@ -2,26 +2,15 @@
 
 [![DOI](https://zenodo.org/badge/965872045.svg)](https://doi.org/10.5281/zenodo.15208532)
 
-To complete this assignment:
+# Data Sources - 
+MTBS (Monitoring Trends in Burn Severity) is an interagency program whose goal is to consistently map the burn severity and extent of large fires across all lands of the United States from 1984 to present. This includes all fires 1,000 acres or greater in the western United States and 500 acres or greater in the eastern Unites States. The extent of coverage includes the continental U.S., Alaska, Hawaii and Puerto Rico.
 
-    1. Open the notebooks in GitHub Codespaces by clicking the Code button > Codespaces tab > Open new Codespace on main
-    2. Wait for the Codespace to load - this can take a few minutes the first time
-    3. Complete the notebook(s)
-    4. Use the GitHub tab in your Codespace to commit AND sync your changes
+I will be using this to map the Mullen Fire, which took place in 2020 between September 17 to October 20.
 
-Your changes will then be available to the teaching team to look at.
+To determine the boundary of the Mullen Fire, MTBS delineates on-screen interpretation of the reflectance imagery and the NBR (Normalized Burn Ratio), dNBR (Differenced Normalized Burn Ratio) and RdNBR (Relativized difference Normalized Burn Ratio) images. The mapping analyst digitizes a perimeter to include any detectable fire area derived from these images. Clouds, cloud shadows, snow or other anomalies intersecting the fire area are also delineated and used to generate a mask later in the workflow. To ensure consistency and high spatial precision, digitization is performed at on-screen display scales between 1:24000 and 1:50000.
+https://www.mtbs.gov/mapping-methods
 
-Once you have finished the notebook(s):
-    1. Create a new notebook in your portfolio repository
-    2. Concisely duplicate your analysis in a location and time of your choosing (i.e. only include the code needed to generate the main plot you make)
-    3. Add a headline and description discussing your results
-    4. Convert your notebook to Markdown or HTML.
-    5. Add a link to the live web version to the corresponding table in the class repository. You may also want to add a link to the home page of your portfolio!
+Source #2 CSV data file provided by our partner. 
+This file contains location data for all three fires but I will filter it down to the Mullen Fire and then break it out by data collection point (there are 50 points in the Mullen fire area) area and number of total bats per area over time ( I will first have to figure out how to determine the total number of bats given that there is a high frequency pass and a low frequency pass that counts the number of bats). Time frame is from 5/27/2024 to 08/19/2024.
+Burn severity is also recorded on a scale of 1-4. 
 
-The following code may help you to export your analysis:
-
-```bash
-jupyter nbconvert <your-notebook-name>.ipynb --to markdown --no-input
-```
-
-You can run it within your notebook as a `%%bash` cell, or in the terminal.
