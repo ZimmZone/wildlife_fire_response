@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../data/habitat-suitability/habitat-suitability-ZimmZone/Wildfires"
+		},
+		{
+			"name": "wildlife_fire_response",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
